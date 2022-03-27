@@ -40,8 +40,7 @@ ITEM_NAMES_LOOKUP.set('LOG:3', 'Jungle Log');
 
 // Basic API request function
 function request(endpoint, params, callback) {
-	params["key"] = KEY ? KEY : atob("NTYwYWRjYmItNzdkMC00ZTIzLThmZDItZTQ5ODNmYjc5NDBj");
-	var url = DOMAIN + endpoint + "?" + encodeQueryData(params);
+	var url = DOMAIN + endpoint;
 	$.getJSON(url, callback);
 }
 
